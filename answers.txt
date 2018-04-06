@@ -1,0 +1,56 @@
+5.1
+$ git branch
+* answers
+  master
+
+5.2
+$ git branch --list --all
+* answers
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/bower
+  remotes/origin/index
+  remotes/origin/landing
+  remotes/origin/landing-ru
+  remotes/origin/master
+  remotes/origin/package
+
+5.3
+16 commits
+
+$ git log --oneline --all --graph --decorate
+* 8a1f5a6 (HEAD -> answers, origin/master, origin/HEAD, master) Added 6
+*   a16d1b9 Merge branch 'index'
+|\
+| * c31af76 (origin/index) Added index.html
+* | 7fb8d97 added 5
+| | *   5cb1d7e (origin/landing) Merge branch 'landing-ru' into landing
+| | |\
+| | | * 7323e88 (origin/landing-ru) Added russian landing
+| | * | 2be96ed Added landing content
+| | |/
+| | * 97ac604 Added landing
+| |/
+|/|
+* | a0bb17f added 4
+* | 68db036 Added 3
+| | * cab8d80 (origin/package) Removed lock
+| | | * 6645414 (origin/bower) Added bower
+| | |/
+| | * 8bfb714 Added locked package
+| | * daa9e63 Added package
+| |/
+|/|
+* | 03b3126 Added 2
+|/
+* 24c74ee Initial commit
+
+5.4
+4 package commits
+
+| | * cab8d80 (origin/package) Removed lock
+| | | * 6645414 (origin/bower) Added bower
+| | |/
+| | * 8bfb714 Added locked package
+| | * daa9e63 Added package
+
